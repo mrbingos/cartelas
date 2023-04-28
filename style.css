@@ -1,0 +1,248 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: url("imagens/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	background-color: #000000;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+.logo {
+	float: left;
+}
+
+.logo a {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav ul li a {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.cart {
+	float: right;
+}
+
+.cart a {
+	font-size: 18px;
+	position: relative;
+}
+
+.cart i {
+	margin-right: 10px;
+}
+
+.cart:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#banner {
+	background-image: url("imagens/fundo.jpg");
+	background-position: center;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459);
+
+}
+
+.banner-content {
+font-size: 1em;
+text-align: center;
+color: #fff;
+}
+
+.banner-content h2 {
+    font-family: 'Fjalla One', sans-serif;
+font-size: 40px;
+font-weight: bold;
+margin-bottom: 20px;
+text-shadow: 2px 2px #333;
+}
+
+.banner-content p {
+    font-family: 'PT Sans', sans-serif;
+font-size: 18px;
+margin-bottom: 40px;
+text-shadow: 2px 2px #333;
+text-align: justify;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.btn-primary {
+background-color: #06ce7b;
+color: #fff;
+}
+
+.btn-primary:hover {
+background-color: #06ce7b;
+}
+
+.btn-secondary {
+background-color: #06ce7b;
+color: #ffffff;
+}
+
+.btn-secondary:hover {
+background-color: #06ce7b;
+}
+
+#produtos {
+padding: 80px 0;
+}
+
+#produtos h2 {
+    font-family: 'Fjalla One', sans-serif;
+font-size: 60px;
+color: #e68506;
+font-weight: bold;
+margin-bottom: 40px;
+text-align: center;
+text-shadow: 1px 1px #333;
+}
+
+.produtos-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: stretch;
+}
+
+.produto {
+flex: 1 1 300px;
+margin: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.produto4 {
+    text-align: center;
+    flex: 1 1 300px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    }
+
+    
+.produto img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.produto h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #5e5e5e;
+font-size: 24px;
+font-weight: bold;
+margin: 20px;
+}
+
+.produto p {
+    font-family: 'PT Sans', sans-serif;
+    color: #757575;
+font-size: 16px;
+margin: 0 20px 20px;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+footer p {
+font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+.logo,
+nav,
+.cart {
+float: none;
+display: block;
+text-align: center;
+margin-bottom: 20px;
+}
+
+nav ul li {
+	display: block;
+	margin: 0;
+}
+
+.cart a {
+	display: block;
+}
+}
